@@ -1,0 +1,16 @@
+{"timestamp":"2026-03-29T11:54:42.554935Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1147. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-29T11:54:42.861196Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-29T11:54:42.863227Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/cv_pipeline_test.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-29T11:54:42.914689Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.915242Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.915750Z","level":"info","event":"Current task name:sauvegarder_cv","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.916007Z","level":"info","event":"Dag name:cv_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.916323Z","level":"info","event":"Sauvegarde en BD via Lambda AWS...","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.916667Z","level":"info","event":"User : user_42","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.916954Z","level":"info","event":"Compétences : ['Angular', 'Node.js', 'Python', 'Docker', 'Kubernetes']","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.917433Z","level":"info","event":"Score : 87/100","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.917895Z","level":"info","event":"CV sauvegardé avec succès !","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.916344Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-29T11:54:42.933142Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.933676Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:54:42.934032Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): sauvegarder_cv>","logger":"task.stdout"}

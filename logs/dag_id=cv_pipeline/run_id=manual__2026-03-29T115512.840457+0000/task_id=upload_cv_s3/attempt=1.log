@@ -1,0 +1,15 @@
+{"timestamp":"2026-03-29T11:55:13.613447Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 1156. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-29T11:55:13.853770Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-29T11:55:13.856110Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/cv_pipeline_test.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-29T11:55:13.907430Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.908041Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.908640Z","level":"info","event":"Current task name:upload_cv_s3","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.909220Z","level":"info","event":"Dag name:cv_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.909683Z","level":"info","event":"CV reçu de l'utilisateur user_42","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.910580Z","level":"info","event":"Fichier : cv_jean_dupont.pdf","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.911345Z","level":"info","event":"CV disponible sur S3 : s3://mon-bucket/cvs/user_42/cv_jean_dupont.pdf","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.908931Z","level":"info","event":"Done. Returned value was: {'user_id': 'user_42', 'file_name': 'cv_jean_dupont.pdf', 's3_url': 's3://mon-bucket/cvs/user_42/cv_jean_dupont.pdf', 's3_key': 'cvs/user_42/cv_jean_dupont.pdf'}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-29T11:55:13.909156Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d3972-b857-7391-9805-da9166e96bbd'), task_id='upload_cv_s3', dag_id='cv_pipeline', run_id='manual__2026-03-29T11:55:12.840457+00:00', try_number=1, dag_version_id=UUID('019d3968-95d2-7fe6-9c98-0c5d6d21a297'), map_index=-1, hostname='6c335bc54886', context_carrier={}, task=<Task(_PythonDecoratedOperator): upload_cv_s3>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 3, 29, 11, 55, 13, 590604, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1573}
+{"timestamp":"2026-03-29T11:55:13.983326Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.983724Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-29T11:55:13.984042Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): upload_cv_s3>","logger":"task.stdout"}

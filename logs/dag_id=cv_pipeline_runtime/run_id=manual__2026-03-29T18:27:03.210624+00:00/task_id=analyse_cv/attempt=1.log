@@ -1,0 +1,16 @@
+{"timestamp":"2026-03-29T18:27:07.805770Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 181. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-29T18:27:07.816474Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-29T18:27:07.818505Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/cv_pipeline_runtime.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-29T18:27:11.628933Z","level":"info","event":"[analyse_cv]","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.629436Z","level":"info","event":"{","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.629895Z","level":"info","event":"  \"analysis_url\": \"https://reportcv.k8s.allence.cloud/cv_info\",","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.630294Z","level":"info","event":"  \"status_code\": 201,","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.630647Z","level":"info","event":"  \"response_keys\": [","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.630932Z","level":"info","event":"    \"cv_id\",","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.631235Z","level":"info","event":"    \"rapport\",","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.631448Z","level":"info","event":"    \"s3_url\",","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.631677Z","level":"info","event":"    \"timestamp\"","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.631917Z","level":"info","event":"  ]","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.632152Z","level":"info","event":"}","logger":"task.stdout"}
+{"timestamp":"2026-03-29T18:27:11.629833Z","level":"info","event":"Done. Returned value was: {'cv_id': None, 'rapport': {'atouts': [], 'certifications': [], 'contact': {'email': '', 'phone_number': ''}, 'education': [], 'experience': [], 'hashtags': [], 'languages': [], 'levels': {'education_level': 0, 'experience_level': 0, 'language_level': 0, 'skills_level': 0}, 'owner': '', 'skills': [], 'snapshot': '', 'technologies': []}, 's3_url': 'https://facturation-uat-uploads.s3.amazonaws.com/public/Carrier01/ReportCv/2026-03-29-18-27-12-536206.json', 'timestamp': '2026-03-29T18:27:12.691390'}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-29T18:27:11.630113Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d3ad9-75bd-746e-bda6-3de057ef9d9d'), task_id='analyse_cv', dag_id='cv_pipeline_runtime', run_id='manual__2026-03-29T18:27:03.210624+00:00', try_number=1, dag_version_id=UUID('019d3a0e-291a-73ad-839b-a3413438fb14'), map_index=-1, hostname='6039afaea601', context_carrier={}, task=<Task(_PythonDecoratedOperator): analyse_cv>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=3, start_date=datetime.datetime(2026, 3, 29, 18, 27, 7, 773775, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1573}
